@@ -5,6 +5,16 @@ html {
     font-size: 16px;
 }
 
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 :root {
     // font sizes / line heights
     --xs-font-size: 0.75rem;
@@ -13,7 +23,7 @@ html {
     --sm-line-height: 1.42857142857;
     --md-font-size: 1rem;
     --md-line-height: 1.5;
-    --lg-font-size: 1.125;
+    --lg-font-size: 1.1rem;
     --lg-line-height: 1.55555555556;
     --xl-font-size: 1.25rem;
     --xl-line-height: 1.4;
@@ -57,7 +67,7 @@ html {
     --background-netural-subtle: #f9fafb;
     --background-warning-subtle: #fffbeb;
 
-    // line colors
+    // line colors (border rings)
     --line-primary: #e5e5e5;
     --line-secondary: #9ca3af;
     --line-success: #bbf7d0;
@@ -93,10 +103,10 @@ body {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  background-color: var(--background-netural-subtle);
 }
 
 * {

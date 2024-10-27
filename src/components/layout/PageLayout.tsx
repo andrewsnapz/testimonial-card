@@ -6,7 +6,9 @@ type PageLayoutProps = {
 };
 
 const PageWrapper = styled.div`
-  background-color: var(--background-primary);
+  position: relative;
+  display: flex;
+  justify-content: center;
   margin-block-start: 200px;
 `;
 
