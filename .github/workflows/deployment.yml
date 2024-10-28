@@ -1,4 +1,4 @@
-name: React Deployment
+name: Testing
 on:
   push:
     branches: ["main"]
