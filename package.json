@@ -1,8 +1,9 @@
 {
-  "name": "react-vite-setup",
+  "name": "testiomonial-card",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+   "homepage": "https://andrewsnapz.github.io/testimonial-card",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
