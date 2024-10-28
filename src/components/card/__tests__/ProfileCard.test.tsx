@@ -1,3 +1,4 @@
+import axe from "axe-core";
 import { it, expect } from "vitest";
 import ProfileCard from "../ProfileCard.tsx";
 import { render, screen } from "@testing-library/react";
@@ -42,4 +43,10 @@ it("renders correct name and userTag", () => {
 
   expect(userName).toBeInTheDocument();
   expect(userTag).toBeInTheDocument();
+});
+
+it("'ProfileDescription' accessability check", async () => {
+  const container = renderComponent(userInfo);
+  const results = await axe.run(container);
+  expect(results.violations.length).toBe(0);
 });
