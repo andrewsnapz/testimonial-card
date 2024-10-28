@@ -1,3 +1,4 @@
+import axe from "axe-core";
 import { it, expect } from "vitest";
 import ProfileDescription from "../ProfileDescription.tsx";
 import { render, screen } from "@testing-library/react";
@@ -15,4 +16,10 @@ it("renders the correct description text that is passed to the 'ProfileDescripti
   renderComponent({ description: "example description text" });
   const descriptionText = screen.getByText(/example description text/i);
   expect(descriptionText).toBeInTheDocument();
+});
+
+it("'ProfileDescription' accessability check", async () => {
+  const container = renderComponent({ description: "example description text" });
+  const results = await axe.run(container);
+  expect(results.violations.length).toBe(0);
 });
