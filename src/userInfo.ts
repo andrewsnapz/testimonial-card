@@ -1,4 +1,4 @@
-import profileImage from "./assets/img/profile-thumbnail.png";
+import profileImage from "./assets/img/profile-thumbnail.webp";
 
 const userInfo = {
   name: "Sarah Dole",
